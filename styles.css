@@ -19,6 +19,8 @@ h2 {
     transform-origin: center;
     /* Define o ponto de origem do zoom para o centro */
     margin-right: 16px;
+    width: 320px; 
+    height: 240;
 }
 
 #videoww:hover {
@@ -32,6 +34,8 @@ h2 {
     /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
     margin-right: 16px;
+    width: 320px; 
+    height: 240;
 }
 
 #videodm:hover {
@@ -44,6 +48,8 @@ h2 {
     transform-origin: center;
     /* Define o ponto de origem do zoom para o centro */
     margin-left: 16px;
+    width: 320px; 
+    height: 240;
 }
 
 #videosn:hover {
