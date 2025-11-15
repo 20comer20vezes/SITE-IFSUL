@@ -19,3 +19,24 @@ videosn.addEventListener('mouseover', function () {
 videosn.addEventListener('mouseout', function () {
     return videosn.load();
 })
+
+document.getElementById('form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const formData = new FormData(this);
+  
+  enviarDados(formData);
+});
+
+function enviarDados(formData) {
+    fetch('https://script.google.com/macros/s/AKfycby2W5FEtbzhkNy5CviSJmLXQ93JeTlYciLQ4BiqLgIJtVFPqqszZ5puCLHwWGN_IaSGbw/exec', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Sucesso:', data);
+    })
+    .catch((error) => {
+        console.error('Erro:', error);
+    });
+}

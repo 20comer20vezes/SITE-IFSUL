@@ -27,11 +27,29 @@
             Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
-    <form method="POST" action="https://script.google.com/macros/s/AKfycbyCL3s5jF3EXWBhu5c_gy6XnBwMcRoeIU30OlaihggcCS8F-UrAvMTinjWoIcPRTfPT/exec">
-        <input name="Email" type="email" placeholder="Email" required>
-        <input name="Name" type="text" placeholder="Name" required>
-        <button type="submit">Send</button>
-    </form>
+    <div class="form">
+        <form method="POST">
+            <h1>Opine também!</h1>
+
+            <label>
+                <span>Nome</span><br>
+                <input name="Name" type="email" placeholder="Seu nome..." required>
+            </label>
+
+            <label>
+                <span>Email</span><br>
+                <input name="Email" type="text" placeholder="email@email.com" required>
+            </label>
+
+            <label>
+                <span>Suas TOP 3 séries</span><br>
+                <input id="series" name="Series" placeholder="Breaking Bad, Dexter, e Supernatural..." type="text">
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <script src="scripts.js"></script>
 </body>
+
 </html>
