@@ -61,7 +61,7 @@ h2 {
     color: rgb(255, 255, 228);
 }
 
-.form {
+.divform {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente o formulário dentro do container */
     align-items: center;     /* Centraliza verticalmente (se necessário) */        /* Exemplo: ocupa a altura total da viewport para demonstração */
